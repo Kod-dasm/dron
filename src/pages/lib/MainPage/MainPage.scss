@@ -1,0 +1,19 @@
+@import 'src/styles/mixins';
+
+.container {
+  height: 200px;
+}
+.heading {
+  @include flex(row, center, center);
+  height: 60px;
+  background-color: #E3E9ED;
+  font-size: 26px;
+  font: Roboto;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $color-dark-blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+.fon {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+  // background-image: url('../images/logo.png');
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+}
+.spacer {
+  height: 60px;
+}
+#styled-input {
+  width: 100%;
+}

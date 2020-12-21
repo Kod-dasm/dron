@@ -1,0 +1,31 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.column-flex{
+  @include flex(column, center, center);
+}
+.blue-container {
+  @include flex(row, center, center);
+  background-color: $color-dark-blue;
+  height: 70px;
+  width: 100%;
+  font-size: 36px;
+  color: $color-white;
+}
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+.dron {
+  @include flex(column, center, center);
+  height: 500px; 
+}
+.partials-dron {
+  @include flex(row, center, center);
+  height: 200px;
+}
+@media (max-width: 600px) {
+  .column-flex {
+    height: 60px;
+  }
+}

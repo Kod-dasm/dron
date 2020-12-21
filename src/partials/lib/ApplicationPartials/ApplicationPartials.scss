@@ -1,0 +1,25 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.column-flex{
+  @include flex(column, center, center);
+}
+.button {
+  background: #223880;
+  border-radius: 49px;
+  width: 200px;
+  height: 40px;
+  color: $color-white;
+}
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  
+  color: #223880;
+}
+
+
+

@@ -1,0 +1,44 @@
+<header>
+  <v-app-bar
+      app
+      height="60px"
+      color="#243980"
+      dark
+    >
+    <v-toolbar-title></v-toolbar-title>
+    <v-spacer></v-spacer>
+    <img src="@/images/Vector.png" alt="">
+    <div class="text">
+      +7 (351) 267-91-15
+    </div>
+    <div class="space"></div>
+    <img src="@/images/cil_envelope-closed.png" alt="" width="30px">
+    <div class="text">
+      pmfdek@susu.ru
+    </div>
+    <div class="space"></div>
+    <v-app-bar-nav-icon class="barnav hidden-md-and-up" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+  </v-app-bar>
+
+  <v-navigation-drawer
+    v-model="drawer"
+    app
+    temporary
+    right
+    color="white"
+  >
+    <v-list
+      nav
+      dense
+    >
+      <v-list-item v-for="route in routes" :key="route.nameRoute">
+        <v-list-item-title>
+          <button-router-component
+          :nameRoute="route.nameRoute" 
+          :linkRoute="route.linkRoute"
+          />
+        </v-list-item-title>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
+</header>

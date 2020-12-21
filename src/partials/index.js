@@ -1,0 +1,5 @@
+export { default as HeaderPartials } from './lib/HeaderPartials/HeaderPartials.vue'
+export { default as FooterPartials } from './lib/FooterPartials/FooterPartials.vue'
+export { default as MenuPartials } from './lib/MenuPartials/MenuPartials.vue'
+export { default as CreateDronPartials } from './lib/CreateDronPartials/CreateDronPartials.vue'
+export { default as ApplicationPartials } from './lib/ApplicationPartials/ApplicationPartials.vue'
