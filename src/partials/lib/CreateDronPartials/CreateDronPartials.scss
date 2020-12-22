@@ -19,13 +19,33 @@
 .dron {
   @include flex(column, center, center);
   height: 500px; 
+  position: relative
 }
 .partials-dron {
   @include flex(row, center, center);
   height: 200px;
 }
+// .images-partials-dron {
+//   position: relative;
+//   width: 685px;
+// }
+.images {
+  position: absolute;
+  width: 680px;
+}
 @media (max-width: 600px) {
+  .images {
+    width: 320px;
+    position: absolute;
+  }
+  .partials-dron {
+    flex-wrap: wrap;
+  }
   .column-flex {
-    height: 60px;
+    height: 600px;
+  }
+  .blue-container {
+    font-size: 16px;
+    height: 100px;
   }
 }

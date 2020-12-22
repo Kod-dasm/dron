@@ -1,0 +1,30 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.container {
+  @include flex(column, center, center);
+  text-align: left;
+  text-indent: 20px;
+  width: 800px;
+}
+.spacer {
+  height: 60px;
+}
+.heading {
+  @include flex(row, center, center);
+  height: 60px;
+  background-color: #E3E9ED;
+  font-size: 26px;
+  font: Roboto;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 14px;
+    height: 80px;
+  }
+  .container {
+    width: 300px;
+  }
+}

@@ -10,9 +10,9 @@ export default {
       routes: [
         { nameRoute: 'ГЛАВНАЯ', linkRoute: '/' },
         { nameRoute: 'СЕНСОРЫ', linkRoute: '/essay' },
-        { nameRoute: 'ЮРИДИЧЕСКИЕ ЗАКОНЫ', linkRoute: '/portfolio' },
-        { nameRoute: 'НАУЧНАЯ ШКОЛА', linkRoute: '/businesscard' },
-        { nameRoute: 'КОНТАКТЫ', linkRoute: '/pedagogicalactivitieswithchildren' }
+        { nameRoute: 'ЮРИДИЧЕСКИЕ ЗАКОНЫ', linkRoute: '/legallaw' },
+        { nameRoute: 'НАУЧНАЯ ШКОЛА', linkRoute: '/businesscard' }
+        // { nameRoute: 'КОНТАКТЫ', linkRoute: '/pedagogicalactivitieswithchildren' }
       ]
     }
   }
