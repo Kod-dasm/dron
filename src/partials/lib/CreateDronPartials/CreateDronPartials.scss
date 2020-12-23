@@ -1,6 +1,14 @@
 @import 'src/styles/mixins';
 @import 'src/styles/variables';
 
+.copter-image {
+  display: none;
+}
+
+.copter-installed {
+  display: block;
+}
+
 .column-flex{
   @include flex(column, center, center);
 }
@@ -32,6 +40,29 @@
 .images {
   position: absolute;
   width: 680px;
+}
+.partials {
+  background-color: #d4d7d8;
+  text-transform: uppercase;
+  padding-right: 50px;
+}
+.image-partial-dron {
+  width: 100px;
+  height: 140px;
+}
+.image-partial-dron-installed {
+  filter: brightness(0);
+}
+@media (max-width: 1000px) {
+  .partials {
+    padding-right: 10px;
+    color: #a4abaf;
+    font-weight: bold;
+  }
+  .image-partial-dron{
+    width: 50px;
+    height: 70px;
+  }
 }
 @media (max-width: 600px) {
   .images {

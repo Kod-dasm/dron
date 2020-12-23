@@ -1,25 +1,29 @@
+import { Drag, Drop } from 'vue-drag-drop'
 import { PartialsDronComponent } from '@/components'
-console.log('PartialsDronComponent', PartialsDronComponent)
+import initialCopter from '@/copter.json'
+
 export default {
   components: {
-    PartialsDronComponent
+    PartialsDronComponent, Drag, Drop
   },
   data () {
     return {
-      partials: [
-        { imgPartial: '/partials-dron/1.png' },
-        { imgPartial: '/partials-dron/2.png' },
-        { imgPartial: '/partials-dron/3.png' },
-        { imgPartial: '/partials-dron/4.png' },
-        { imgPartial: '/partials-dron/5.png' },
-        { imgPartial: '/partials-dron/6.png' },
-        { imgPartial: '/partials-dron/7.png' },
-        { imgPartial: '/partials-dron/8.png' },
-        { imgPartial: '/partials-dron/9.png' },
-        { imgPartial: '/partials-dron/10.png' },
-        { imgPartial: '/partials-dron/11.png' },
-        { imgPartial: '/partials-dron/12.png' }
-      ]
+      copters: initialCopter.map(c => ({ ...c, installed: false }))
+    }
+  },
+  computed: {
+    assembled () {
+      return !this.copters.find(c => c.installed === false)
+    }
+  },
+  mounted () {
+    console.log('this', this)
+  },
+  methods: {
+    handleDrop (copterId) {
+      console.log('copterId', copterId)
+      const copter = this.copters.find(c => c.id === copterId)
+      copter.installed = true
     }
   }
 }

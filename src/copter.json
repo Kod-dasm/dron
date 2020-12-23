@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "part": "/partials-dron/1.png",
+    "copter": "/images-dron/1.png"
+  },
+  {
+    "id": 2,
+    "part": "/partials-dron/2.png",
+    "copter": "/images-dron/2.png"
+  },
+  {
+    "id": 3,
+    "part": "/partials-dron/3.png",
+    "copter": "/images-dron/3.png"
+  },
+  {
+    "id": 5,
+    "part": "/partials-dron/5.png",
+    "copter": "/images-dron/5.png"
+  },
+  {
+    "id": 6,
+    "part": "/partials-dron/6.png",
+    "copter": "/images-dron/6.png"
+  },
+  {
+    "id": 7,
+    "part": "/partials-dron/7.png",
+    "copter": "/images-dron/7.png"
+  },
+  {
+    "id": 8,
+    "part": "/partials-dron/8.png",
+    "copter": "/images-dron/8.png"
+  },
+  {
+    "id": 9,
+    "part": "/partials-dron/9.png",
+    "copter": "/images-dron/9.png"
+  },
+  {
+    "id": 10,
+    "part": "/partials-dron/10.png",
+    "copter": "/images-dron/10.png"
+  },
+  {
+    "id": 11,
+    "part": "/partials-dron/11.png",
+    "copter": "/images-dron/11.png"
+  },
+  {
+    "id": 12,
+    "part": "/partials-dron/12.png",
+    "copter": "/images-dron/12.png"
+  }
+]

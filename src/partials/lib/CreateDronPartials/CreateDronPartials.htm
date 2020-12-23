@@ -1,18 +1,21 @@
 <div class="column-flex">
   <div class="blue-container">КАК СОЗДАТЬ ДРОН - МЕТЕОРОЛОГ?</div>
-
-  <div class="dron">
-    <img src="/images-dron/13.png" alt="" class="images">
-    <img src="/images-dron/1.png" alt="" class="images">
-    <img src="/images-dron/2.png" alt="" class="images">
-    <img src="/images-dron/3.png" alt="" class="images">
-  </div>
+  <drop @drop="handleDrop">
+    <div class="dron">
+      <img src="/images-dron/13.png" alt="" class="images">
+      <img src="/images-dron/14.png" alt="" class="images">
+      <img v-for="copter in copters" :key="copter.id" :class="{'copter-installed': copter.installed}" :src="copter.copter" alt="" class="copter-image images">
+    </div>
+  </drop>
   <div class="blue-container">Перетащи запчасти, чтобы узнать из чего состоит дрон-метеоролог и собери его!</div>
   <div class="partials-dron">
-    <partials-dron-component v-for="partial in partials"
-    :key="partial.imgPartial" 
-    :imgPartial="partial.imgPartial" 
-    />
+    <drag v-for="copter in copters" :transfer-data="copter.id" :key="copter.id" :draggable="!copter.installed"> 
+      <div class="partials">
+        <img :src="copter.part" alt="" class="image-partial-dron" :class="{'image-partial-dron-installed': copter.installed}">
+      </div>
+      
+    </drag>
+    
   </div>
-  
+  <div v-if="assembled">Done!</div>
 </div>
